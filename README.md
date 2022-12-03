@@ -15,3 +15,10 @@ npm install @vue/vue3-jest@27
 - replace "export default Vue.extend({" with "export default {"
 - update vue.config.js
 - update shim-vue.d.ts (for unit tests)
+
+### from 2.7 to 3
+- run this command
+```
+npm r @vue/compat
+```
+delete vue.config.js (or take the one from vue3 default app)
