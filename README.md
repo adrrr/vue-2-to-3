@@ -7,7 +7,7 @@ npm r vue //removes vue2
 npm r vue-template-compiler //not needed for vue3
 npm i vue //installs vue3
 npm i @vue/compat
-npm i @vue/compiler-sfc
+npm i -D @vue/compiler-sfc
 npm i @vue/test-utils@2
 npm install @vue/vue3-jest@27
 ```
