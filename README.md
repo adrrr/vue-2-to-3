@@ -1,29 +1,17 @@
-# vue-2-to-vue3
+### from 2.6 to 2.7
 
-## Project setup
+- run these commands
 ```
-npm install
+vue upgrade //to check vue-cli is the latest
+npm r vue //removes vue2
+npm r vue-template-compiler //not needed for vue3
+npm i vue //installs vue3
+npm i @vue/compat
+npm i @vue/compiler-sfc
+npm i @vue/test-utils@2
+npm install @vue/vue3-jest@27
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<sub>where 27 is the version of jest</sub>
+- replace "export default Vue.extend({" with "export default {"
+- update vue.config.js
+- update shim-vue.d.ts (for unit tests)
