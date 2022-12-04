@@ -1,4 +1,4 @@
-### from 2.6 to 2.7
+### from 2.6 to vue 3 with vue-compat (commit 2 & 3)
 
 - run these commands
 ```
@@ -16,7 +16,7 @@ npm install @vue/vue3-jest@27
 - update vue.config.js
 - update shim-vue.d.ts (for unit tests)
 
-### from 2.7 to 3
+### from vue 3 with vue-compat to vue 3 (commit 4)
 - run this command
 ```
 npm r @vue/compat
@@ -26,7 +26,7 @@ delete vue.config.js (or take the one from vue3 default app)
 ### from vue cli to vite
 
 
-### from vue-cli to vite
+### from vue-cli to vite (commit 5)
 
 - run these commands
 ```
