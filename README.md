@@ -15,3 +15,21 @@ npm install @vue/vue3-jest@27
 - replace "export default Vue.extend({" with "export default {"
 - update vue.config.js
 - update shim-vue.d.ts (for unit tests)
+
+### from vue-cli to vite
+
+- run these commands
+```
+npm r @vue/cli-plugin-babel @vue/cli-plugin-eslint @vue/cli-plugin-typescript @vue/cli-plugin-unit-jest @vue/cli-service sass-loader
+npm i -D vite
+npm i -D vite-plugin-vue2 // for vue 2 project3
+npm i -D @vitejs/plugin-vue // for vue 3 project3
+npm i -D @vitejs/plugin-vue --force // for vue 2.7 project
+npm r core-js babel-eslint 
+npm i estlint@8 eslint-plugin-vue@8
+```
+- delete babel.config.js 
+- update .eslintrc.js
+- create vite.config.js (not the same content if vue 2, vue 2.7, or vue 3)
+- move index.html file and update it
+- update package.json scripts 
