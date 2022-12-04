@@ -22,3 +22,24 @@ npm install @vue/vue3-jest@27
 npm r @vue/compat
 ```
 delete vue.config.js (or take the one from vue3 default app)
+
+### from vue cli to vite
+
+
+### from vue-cli to vite
+
+- run these commands
+```
+npm r @vue/cli-plugin-babel @vue/cli-plugin-eslint @vue/cli-plugin-typescript @vue/cli-plugin-unit-jest @vue/cli-service sass-loader
+npm i -D vite
+npm i -D vite-plugin-vue2 // for vue 2 projects
+npm i -D @vitejs/plugin-vue // for vue 3 projects
+npm i -D @vitejs/plugin-vue --force // for vue 2.7 projects
+npm r core-js babel-eslint 
+npm i eslint@8 eslint-plugin-vue@8
+```
+- delete babel.config.js 
+- update .eslintrc.js
+- create vite.config.js (not the same content if vue 2, vue 2.7, or vue 3)
+- move index.html file and update it
+- update package.json scripts 
